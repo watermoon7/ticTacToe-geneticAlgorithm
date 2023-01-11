@@ -5,7 +5,7 @@ from copy import deepcopy
 
 def save_data(bots):
     global count
-    with open (f"/workspaces/69s-maker/bot_data/data_{count}.txt", 'a') as f:
+    with open (f"bot_data/data_{count}.txt", 'a') as f:
         for bot in bots:
             lines = [str(list(bot[0].layer1)), str(list(bot[0].layer2)), str(list(bot[0].layer3))]
             f.write(bot[0].ID)
